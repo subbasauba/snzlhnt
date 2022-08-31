@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>AR.js Studio</title>
+    <title>Schnitzeljagd-Hausarbeit</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,8 +17,8 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="></script>
 
 
-    <!-- import studio-backend api -->
-    <script src="https://raw.githack.com/AR-js-org/studio-backend/master/dist/arjs-studio-backend.min.js"></script>
+    <!-- import studio-backend api -->ttps://raw.githack.com/AR-js-org/studio-backend/master/dist/arjs-studio-backend.min.js"></script>
+    <script src="h
 
     <!-- import aframe to support model preview -->
     <script src="https://aframe.io/releases/1.0.4/aframe.js"></script>
@@ -28,15 +28,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.3.0/jszip.min.js"></script>
 
     <!-- import web components -->
-    <script src="../../components/back-anchor/back-anchor.js"></script>
     <script src="../../components/file-holder/file-holder.js"></script>
     <script src="../../components/file-select/file-select.js"></script>
     <script src="../../components/map/map-elements.js"></script>
     <script src="../../components/map/map-pick-location.js"></script>
-    <script src="../../components/header/header.js"></script>
     <script src="../../components/footer/footer.js"></script>
     <script src="../../components/model-controller/model-controller.js"></script>
-    <script src="../../components/feedback/stickybutton.js"></script>
+
 
     <!-- import utils -->
     <script src="../../utils/fileHelper.js"></script>
@@ -46,26 +44,27 @@
 </head>
 
 <body>
-    <page-header assetsUrl="../../assets"></page-header>
+   
 
     <div class="pages-content">
-        <back-anchor assetsUrl="../../assets"></back-anchor>
+        
         <div class="pages-content-container">
             <div class="pages-content-element">
-                <p class="title">Location-based</p>
+                <p class="title">Schnitzeljagd</p>
                 <p class="paragraph">
-                    A location-based AR experience uses GPS coordinates to place your AR content in a specific location.
-                    You can read more <a class="link"
-                        target="_blank"
-                        href="https://medium.com/swlh/build-your-location-based-augmented-reality-web-app-a841956eed2c">here</a>,
-                    or follow the steps below to get started now.
+                    In diesem Spiel werden die Geolokationsdaten als Anchor gespeichert um für andere Sichtbar zu bleiben.
+                    Regeln:
+                    - erstes Schnitzel markiert das Ziel
+                    - bei der Platzierung des nächsten Schnitzel muss ein Hinweis auf das vorherige Schnitzel erfolgen
+                    - wird neben der reinen Lokationsdaten mit Quiz gearbeitet, kann das mit extra Punkten versehen werden.
+                
                 </p>
             </div>
         </div>
 
         <div class="pages-content-container">
             <div class="pages-content-element">
-                <p class="lead">1. Pick the location</p>
+                <p class="lead">Hinterlasse ein Schnitzel</p>
                 <p class="paragraph">
                     Click to drop a pin on the map or enter exact GPS coordinates. You may enter up to 10 locations.
                     You can retrieve latitude and longitude from an address using <a target="_blannk" href="https://www.latlong.net/" class="link">this tool</a>.
